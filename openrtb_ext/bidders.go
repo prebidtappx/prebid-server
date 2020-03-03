@@ -25,14 +25,17 @@ const (
 	BidderAdkernel         BidderName = "adkernel"
 	BidderAdkernelAdn      BidderName = "adkernelAdn"
 	BidderAdpone           BidderName = "adpone"
+	BidderAdmixer          BidderName = "admixer"
 	BidderAdtelligent      BidderName = "adtelligent"
 	BidderAdvangelists     BidderName = "advangelists"
 	BidderApplogy          BidderName = "applogy"
 	BidderAppnexus         BidderName = "appnexus"
+	BidderAdoppler         BidderName = "adoppler"
 	BidderBeachfront       BidderName = "beachfront"
 	BidderBrightroll       BidderName = "brightroll"
 	BidderConsumable       BidderName = "consumable"
 	BidderConversant       BidderName = "conversant"
+	BidderCpmstar          BidderName = "cpmstar"
 	BidderDatablocks       BidderName = "datablocks"
 	BidderEmxDigital       BidderName = "emx_digital"
 	BidderEngageBDR        BidderName = "engagebdr"
@@ -57,6 +60,7 @@ const (
 	BidderRTBHouse         BidderName = "rtbhouse"
 	BidderRubicon          BidderName = "rubicon"
 	BidderSharethrough     BidderName = "sharethrough"
+	BidderSmartRTB         BidderName = "smartrtb"
 	BidderSomoaudience     BidderName = "somoaudience"
 	BidderSonobi           BidderName = "sonobi"
 	BidderSovrn            BidderName = "sovrn"
@@ -77,15 +81,18 @@ var BidderMap = map[string]BidderName{
 	"adform":            BidderAdform,
 	"adkernel":          BidderAdkernel,
 	"adkernelAdn":       BidderAdkernelAdn,
+	"admixer":           BidderAdmixer,
 	"adpone":            BidderAdpone,
 	"adtelligent":       BidderAdtelligent,
 	"advangelists":      BidderAdvangelists,
 	"applogy":           BidderApplogy,
 	"appnexus":          BidderAppnexus,
+	"adoppler":          BidderAdoppler,
 	"beachfront":        BidderBeachfront,
 	"brightroll":        BidderBrightroll,
 	"consumable":        BidderConsumable,
 	"conversant":        BidderConversant,
+	"cpmstar":           BidderCpmstar,
 	"datablocks":        BidderDatablocks,
 	"emx_digital":       BidderEmxDigital,
 	"engagebdr":         BidderEngageBDR,
@@ -110,6 +117,7 @@ var BidderMap = map[string]BidderName{
 	"rtbhouse":          BidderRTBHouse,
 	"rubicon":           BidderRubicon,
 	"sharethrough":      BidderSharethrough,
+	"smartrtb":          BidderSmartRTB,
 	"somoaudience":      BidderSomoaudience,
 	"sonobi":            BidderSonobi,
 	"sovrn":             BidderSovrn,
