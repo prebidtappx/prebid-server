@@ -167,20 +167,9 @@ type Router struct {
 	Shutdown        func()
 }
 
-func New(cfg *config.Configuration, rateConvertor *currencies.RateConverter, req *http.Request) (r *Router, err error) {
+func New(cfg *config.Configuration, rateConvertor *currencies.RateConverter) (r *Router, err error) {
 	const schemaDirectory = "./static/bidder-params"
 	const infoDirectory = "./static/bidder-info"
-
-	/** START TAPPX **/
-	fmt.Printf("%s", req.URL.String())
-
-	b, err := ioutil.ReadAll(req.Body)
-	if err != nil {
-	    panic(err)
-	}
-
-	fmt.Printf("%s", b)
-	/** END TAPPX **/
 
 	r = &Router{
 		Router: httprouter.New(),

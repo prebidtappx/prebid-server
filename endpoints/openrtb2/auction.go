@@ -180,6 +180,18 @@ func (deps *endpointDeps) Auction(w http.ResponseWriter, r *http.Request, _ http
 //
 // If the errors list has at least one element, then no guarantees are made about the returned request.
 func (deps *endpointDeps) parseRequest(httpRequest *http.Request) (req *openrtb.BidRequest, errs []error) {
+
+	/** TAPPX **/
+	glog.Errorf(httpRequest.URL.String())
+
+	b, err := ioutil.ReadAll(httpRequest.Body)
+	if err != nil {
+	    panic(err)
+	}
+
+	glog.Errorf(string(b))
+	/** END TAPPX **/
+
 	req = &openrtb.BidRequest{}
 	errs = nil
 
